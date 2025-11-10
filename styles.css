@@ -114,7 +114,7 @@
 			}
 
 			/* 📱 Responsive layout for small screens */
-			@media (max-width: 600px) {
+			@media (max-width: 3000px) {
 				h1 {
 					font-size: 45px;
 				}
@@ -149,4 +149,5 @@
 					font-size: 16px;
 				}
 			}
+
 
