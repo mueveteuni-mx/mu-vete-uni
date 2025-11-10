@@ -1,0 +1,153 @@
+			body {
+				margin: 0;
+				padding: 0;
+				min-height: 100vh;
+				font-family: Arial, sans-serif;
+				display: flex;
+				flex-direction: column;
+			}
+
+			nav {
+				color:#004FB1;
+				background-color:#FCC900;
+				padding:10px;
+				font-family:"Bebas Neue", sans-serif;
+				font-weight: 400;
+				font-style:normal;
+				font-size:15px;
+				margin: 0;
+			}
+
+			a {
+				color: #004FB1;
+				text-decoration: none;
+			}
+
+			a:visited {
+				color: #AFAFAF;
+				text-decoration: none;
+			}
+
+			a:hover {
+				color: #004FB1;
+				text-decoration: underline;
+			}
+
+			h1 {
+				color:#004FB1;
+				background-color:#FCC900;
+				padding:10px;
+				font-family:"Bebas Neue", sans-serif;
+				font-weight:800;
+				font-style:normal;
+				font-size:70px;
+				margin: 0;
+			}
+
+			p {
+				color:DimGray;
+				font-family:Arial;
+				font-style:normal;
+				font-size:15px;
+				text-align:center;
+				margin: 20px;
+			}
+
+			button {
+				background-color: #004FB1;
+				border: none;
+				color: white;
+				padding: 10px 20px;
+				text-align: center;
+				text-decoration: none;
+				font-family: Arial;
+				font-size: 15px;
+				font-style:normal;
+				cursor: pointer;
+				border-radius: 6px;
+			}
+
+			.buttons {
+				display: flex;
+				flex-wrap: wrap;
+				justify-content: center;
+				gap: 15px;
+				margin-top: 20px;
+			}
+
+			/* 🔴 Floating red circular HELP button */
+			.help-button {
+				position: fixed;
+				bottom: 80px;
+				left: 50%;
+				transform: translateX(-50%);
+				background-color: red;
+				color: white;
+				border: none;
+				border-radius: 50%;
+				width: 80px;
+				height: 80px;
+				font-family: "Bebas Neue", sans-serif;
+				font-size: 20px;
+				cursor: pointer;
+				display: flex;
+				align-items: center;
+				justify-content: center;
+				box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+				transition: transform 0.2s ease, box-shadow 0.2s ease;
+				z-index: 1000;
+			}
+
+			.help-button:hover {
+				transform: translateX(-50%) scale(1.1);
+				box-shadow: 0 6px 15px rgba(0,0,0,0.4);
+			}
+
+			footer {
+				margin-top: auto;
+				background-color: #FCC900;
+				color: #004FB1;
+				text-align: center;
+				font-family: "Bebas Neue", sans-serif;
+				padding: 10px 0;
+				font-size: 18px;
+			}
+
+			/* 📱 Responsive layout for small screens */
+			@media (max-width: 600px) {
+				h1 {
+					font-size: 45px;
+				}
+
+				nav {
+					font-size: 13px;
+					display: flex;
+					flex-wrap: wrap;
+					justify-content: center;
+					gap: 10px;
+				}
+
+				.buttons {
+					flex-direction: column;
+					align-items: center;
+				}
+
+				button {
+					width: 80%;
+					max-width: 250px;
+					font-size: 16px;
+					padding: 12px;
+				}
+
+				.help-button {
+					width: 65px;
+					height: 65px;
+					font-size: 16px;
+					bottom: 90px;
+				}
+
+				footer {
+					font-size: 16px;
+				}
+			}
+
