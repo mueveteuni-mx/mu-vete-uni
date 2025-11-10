@@ -133,9 +133,9 @@
 				}
 
 				button {
-					width: 80%;
-					font-size: 16px;
-					padding: 12px;
+					width: 200px; /* consistent size on mobile */
+					height: 55px;
+					font-size: 17px;
 				}
 
 				.help-button {
@@ -149,3 +149,4 @@
 					font-size: 16px;
 				}
 			}
+
