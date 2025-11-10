@@ -57,21 +57,23 @@
 				background-color: #004FB1;
 				border: none;
 				color: white;
+				padding: 10px 20px;
 				text-align: center;
 				text-decoration: none;
 				font-family: Arial;
-				font-size: 16px;
+				font-size: 15px;
 				font-style:normal;
 				cursor: pointer;
 				border-radius: 6px;
-				width: 180px; /* 🔵 uniform button width */
-				height: 50px; /* 🔵 uniform height */
-				transition: transform 0.2s ease, box-shadow 0.2s ease;
 			}
-			button {
-					width: 200px; /* consistent size on mobile */
-					height: 55px;
-					font-size: 17px;
+
+			.buttons {
+				display: flex;
+				flex-wrap: wrap;
+				justify-content: center;
+				gap: 15px;
+				margin-top: 20px;
+			}
 
 			/* 🔴 Floating red circular HELP button */
 			.help-button {
@@ -147,8 +149,5 @@
 				footer {
 					font-size: 16px;
 				}
-			}
-
-
 
 
